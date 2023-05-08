@@ -6,6 +6,7 @@ public class GameManager : MonoBehaviour
 {
     public GameObject pauseScreen;
     private bool paused;
+    private float zoomSpeed;
 
     void Start()
     {
@@ -35,4 +36,5 @@ public class GameManager : MonoBehaviour
             Time.timeScale = 1;
         }
     }
+
 }
