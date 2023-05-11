@@ -6,7 +6,6 @@ public class GameManager : MonoBehaviour
 {
     public GameObject pauseScreen;
     private bool paused;
-    private float zoomSpeed;
 
     void Start()
     {
