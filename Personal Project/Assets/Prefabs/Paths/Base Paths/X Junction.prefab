@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 4493108691317652008}
   m_Layer: 0
   m_Name: X Junction
-  m_TagString: Ground
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -111,6 +111,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Border1
       objectReference: {fileID: 0}
+    - target: {fileID: 917178265321652524, guid: 149bc97e3f1a60f48adf68a630443ef0, type: 3}
+      propertyPath: m_TagString
+      value: Untagged
+      objectReference: {fileID: 0}
     - target: {fileID: 3857719362235123171, guid: 149bc97e3f1a60f48adf68a630443ef0, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -188,6 +192,10 @@ PrefabInstance:
     - target: {fileID: 917178265321652524, guid: 149bc97e3f1a60f48adf68a630443ef0, type: 3}
       propertyPath: m_Name
       value: Border4
+      objectReference: {fileID: 0}
+    - target: {fileID: 917178265321652524, guid: 149bc97e3f1a60f48adf68a630443ef0, type: 3}
+      propertyPath: m_TagString
+      value: Untagged
       objectReference: {fileID: 0}
     - target: {fileID: 3857719362235123171, guid: 149bc97e3f1a60f48adf68a630443ef0, type: 3}
       propertyPath: m_RootOrder
@@ -267,6 +275,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Border3
       objectReference: {fileID: 0}
+    - target: {fileID: 917178265321652524, guid: 149bc97e3f1a60f48adf68a630443ef0, type: 3}
+      propertyPath: m_TagString
+      value: Untagged
+      objectReference: {fileID: 0}
     - target: {fileID: 3857719362235123171, guid: 149bc97e3f1a60f48adf68a630443ef0, type: 3}
       propertyPath: m_RootOrder
       value: 2
@@ -344,6 +356,10 @@ PrefabInstance:
     - target: {fileID: 917178265321652524, guid: 149bc97e3f1a60f48adf68a630443ef0, type: 3}
       propertyPath: m_Name
       value: Border2
+      objectReference: {fileID: 0}
+    - target: {fileID: 917178265321652524, guid: 149bc97e3f1a60f48adf68a630443ef0, type: 3}
+      propertyPath: m_TagString
+      value: Untagged
       objectReference: {fileID: 0}
     - target: {fileID: 3857719362235123171, guid: 149bc97e3f1a60f48adf68a630443ef0, type: 3}
       propertyPath: m_RootOrder
