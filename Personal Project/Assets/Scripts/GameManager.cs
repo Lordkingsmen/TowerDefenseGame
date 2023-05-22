@@ -6,7 +6,7 @@ public class GameManager : MonoBehaviour
 {
     public GameObject pauseScreen;
     private bool paused;
-    private int difficuty;
+    private bool diff;
 
     void Start()
     {
@@ -14,20 +14,20 @@ public class GameManager : MonoBehaviour
         {
             if (spawner.name == "Director")
             {
-                if(difficuty = 1)
+                /*if(diff = 1)
                 {
-                    WaveSpawnerEasy;
+                    WaveSpawnerEasy();
                 }
-                else if (difficuty = 2)
+                else if (diff = 2)
                 {
-                    WaveSpawenerMed;
+                    WaveSpawenerMed();
                 }
-                else if (difficulty = 3)
+                else if (diff = 3)
                 {
-                    WaveSpawnerHard
-                }
+                    WaveSpawnerHard();
+                }*/
             }
-        }
+        } 
     }
 
     void Update()
@@ -54,16 +54,16 @@ public class GameManager : MonoBehaviour
         }
     }
 
-    void WaveSpawnerEasy
+    void WaveSpawnerEasy()
     {
-        Instantiate()
+
     }
-    void WaveSpawenerMed
+    void WaveSpawenerMed()
     {
-        Instantiate()
+
     }
-void WaveSpawnerHard
+    void WaveSpawnerHard()
     {
-        Instantiate()
+
     }
 }
