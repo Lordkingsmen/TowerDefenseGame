@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class EnemyController : MonoBehaviour
 {
+    private Vector3 mover = new Vector3(0, 0, 0.5f);
     void Start()
     {
         
@@ -16,34 +17,38 @@ public class EnemyController : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        //combine the same ones later
         if (other.tag == "Spawner")
         {
-            transform.Rotate = other.Rotate;
+            Straight();
         }
-        /*else (other.tag == "Straight")
+        else if (other.tag == "Straight")
         {
-            transform.eulerAngles = other.eulerAngles;
+            Straight();
         }
-        else (other.tag == "Right Turn")
+        else if (other.tag == "Right Turn")
         {
-            transform.eulerAngles = other.eulerAngles;
+            Straight();
         }
-        else (other.tag == "Left Turn")
+        else if (other.tag == "Left Turn")
         {
-            transform.eulerAngles = other.eulerAngles;
+            Straight();
         }
-        else (other.tag == "T Merge")
+        else if (other.tag == "T Merge")
         {
-            transform.eulerAngles = other.eulerAngles;
+            Straight();
         }
-        else (other.tag == "T Center")
+        else if (other.tag == "T Center")
         {
-            transform.eulerAngles = other.eulerAngles;
+            Straight();
         }
-        else (other.tag == "X Path")
+        else if (other.tag == "X Path")
         {
-            transform.eulerAngles = other.eulerAngles;
-        }*/
+            Straight();
+        }
+    }
+
+    private void Straight()
+    { 
+        transform.Translate(mover);
     }
 }
