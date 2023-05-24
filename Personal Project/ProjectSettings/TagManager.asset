@@ -6,6 +6,8 @@ TagManager:
   tags:
   - Spawner
   - Straight
+  - Right Turn
+  - BasicEnemy
   layers:
   - Default
   - TransparentFX
