@@ -6,18 +6,15 @@ public class EnemyController : MonoBehaviour
 {
     private Vector3 mover = new Vector3(0, 0, 0.5f);
     private int iterationCount = 3;
-    private float moveTime;
+    private float moveTime = 0.5f;
     void Start()
     {
-        if (tag == "BasicEnemy")
-        {
-            moveTime = 0.5f;
-        }
+
     }
 
     void Update()
     {
-        
+
     }
 
     private void OnTriggerEnter(Collider other)
@@ -25,6 +22,7 @@ public class EnemyController : MonoBehaviour
         if (other.tag == "Spawner" || other.tag == "Straight")
         {
             StartCoroutine("Straight");
+            other.transform.Rotate = this.transform.Rotate;
         }
         else if (other.tag == "Right Turn")
         {
