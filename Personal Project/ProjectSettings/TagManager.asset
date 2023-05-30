@@ -4,10 +4,9 @@
 TagManager:
   serializedVersion: 2
   tags:
+  - Path
   - Spawner
-  - Straight
-  - Right Turn
-  - BasicEnemy
+  - End
   layers:
   - Default
   - TransparentFX
