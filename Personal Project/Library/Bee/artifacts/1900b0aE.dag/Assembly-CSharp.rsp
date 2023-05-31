@@ -313,6 +313,7 @@
 "Assets/Scripts/CameraMovement.cs"
 "Assets/Scripts/EnemyController.cs"
 "Assets/Scripts/GameManager.cs"
+"Assets/Scripts/SpawnerController.cs"
 -langversion:8.0
 
 /deterministic

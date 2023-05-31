@@ -111,6 +111,7 @@ GameObject:
   - component: {fileID: 8951999723046107663}
   - component: {fileID: 5712191083954774088}
   - component: {fileID: 4765689013192526842}
+  - component: {fileID: 3772559725447450194}
   m_Layer: 0
   m_Name: Director
   m_TagString: Spawner
@@ -161,6 +162,21 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 126
   m_CollisionDetection: 0
+--- !u!114 &3772559725447450194
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3706505890302253802}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c5d42be1b594f4b43b019a14ffc579db, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enemyPrefabs:
+  - {fileID: 1756109387617197945, guid: 999229d000a330746823a9877bcadef4, type: 3}
+  - {fileID: 1756109387617197945, guid: 999229d000a330746823a9877bcadef4, type: 3}
 --- !u!1001 &792996596570793995
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -346,7 +362,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3857719362235123171, guid: 149bc97e3f1a60f48adf68a630443ef0, type: 3}
       propertyPath: m_LocalScale.x
-      value: -0.99995995
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3857719362235123171, guid: 149bc97e3f1a60f48adf68a630443ef0, type: 3}
       propertyPath: m_LocalScale.y
@@ -354,7 +370,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3857719362235123171, guid: 149bc97e3f1a60f48adf68a630443ef0, type: 3}
       propertyPath: m_LocalScale.z
-      value: -0.16667333
+      value: 0.1666733
       objectReference: {fileID: 0}
     - target: {fileID: 3857719362235123171, guid: 149bc97e3f1a60f48adf68a630443ef0, type: 3}
       propertyPath: m_LocalPosition.x

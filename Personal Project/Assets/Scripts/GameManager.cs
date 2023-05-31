@@ -7,28 +7,10 @@ public class GameManager : MonoBehaviour
 {
     public GameObject pauseScreen;
     private bool paused;
-    private bool diff;
 
     void Start()
     {
-        foreach (GameObject spawner in GameObject.FindGameObjectsWithTag("Spawner"))
-        {
-            if (spawner.name == "Director")
-            {
-                /*if(diff = 1)
-                {
-                    WaveSpawnerEasy();
-                }
-                else if (diff = 2)
-                {
-                    WaveSpawenerMed();
-                }
-                else if (diff = 3)
-                {
-                    WaveSpawnerHard();
-                }*/
-            }
-        } 
+
     }
 
     void Update()
@@ -53,18 +35,5 @@ public class GameManager : MonoBehaviour
             pauseScreen.SetActive(false);
             Time.timeScale = 1;
         }
-    }
-
-    void WaveSpawnerEasy()
-    {
-
-    }
-    void WaveSpawenerMed()
-    {
-
-    }
-    void WaveSpawnerHard()
-    {
-
     }
 }

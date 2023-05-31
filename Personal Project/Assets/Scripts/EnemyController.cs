@@ -24,7 +24,7 @@ public class EnemyController : MonoBehaviour
         }
         else if(other.tag == "End")
         {
-
+            Destroy(gameObject);
         }
     }
     IEnumerator Pathing()
