@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 6735807940759689215}
   m_Layer: 0
   m_Name: Grass
-  m_TagString: Watuh
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -107,6 +107,10 @@ PrefabInstance:
     - target: {fileID: 1768772209352317881, guid: 13854fbb83827ee4caa6459a660f2e87, type: 3}
       propertyPath: m_Name
       value: Top
+      objectReference: {fileID: 0}
+    - target: {fileID: 1768772209352317881, guid: 13854fbb83827ee4caa6459a660f2e87, type: 3}
+      propertyPath: m_TagString
+      value: Untagged
       objectReference: {fileID: 0}
     - target: {fileID: 2429928823498219382, guid: 13854fbb83827ee4caa6459a660f2e87, type: 3}
       propertyPath: m_RootOrder
