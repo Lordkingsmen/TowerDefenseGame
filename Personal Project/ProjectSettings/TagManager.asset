@@ -8,6 +8,7 @@ TagManager:
   - Spawner
   - End
   - EnemyGround
+  - Bullet
   layers:
   - Default
   - TransparentFX

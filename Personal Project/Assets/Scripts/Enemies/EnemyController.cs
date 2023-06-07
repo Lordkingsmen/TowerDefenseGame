@@ -22,6 +22,11 @@ public class EnemyController : MonoBehaviour
             this.transform.forward = other.transform.forward;
             StartCoroutine("Pathing");
         }
+        else if (other.tag == "Bullet")
+        {
+            Destroy(gameObject);
+            Destroy(other.gameObject);
+        }
         else if(other.tag == "End")
         {
             Destroy(gameObject);

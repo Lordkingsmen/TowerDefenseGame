@@ -312,8 +312,9 @@
 -r:"Library/Bee/artifacts/1900b0aE.dag/UnityEngine.UI.ref.dll"
 "Assets/Scripts/Enemies/EnemyController.cs"
 "Assets/Scripts/GameManager.cs"
-"Assets/Scripts/SpawnerController.cs"
 "Assets/Scripts/Towers/basicTower.cs"
+"Assets/Scripts/Towers/bullet.cs"
+"Assets/Scripts/Towers/SpawnerController.cs"
 -langversion:8.0
 
 /deterministic

@@ -4,15 +4,17 @@ using UnityEngine;
 
 public class basicTower : MonoBehaviour
 {
+    public GameObject[] bulletPrefabs;
     public GameObject[] AllObjects;
     public GameObject NearestOBJ;
     float distance;
     float nearestDistance = 10;
+    private float startDelay = 1;
 
 
     void Start()
     {
-
+        InvokeRepeating("spawnBulletPrefabs", startDelay, 2f);
     }
 
     void Update()
@@ -29,5 +31,11 @@ public class basicTower : MonoBehaviour
                 nearestDistance = distance;
             }
         }
+    }
+    void spawnBulletPrefabs()
+    {
+        int bulletIndex = Random.Range(0, bulletPrefabs.Length);
+        Vector3 spawnPos = transform.position;
+        Instantiate(bulletPrefabs[bulletIndex], spawnPos, bulletPrefabs[bulletIndex].transform.rotation);
     }
 }
