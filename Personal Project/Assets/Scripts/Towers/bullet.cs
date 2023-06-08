@@ -28,10 +28,8 @@ public class bullet : MonoBehaviour
             {
                 NearestOBJ = AllObjects[i];
                 nearestDistance = distance;
+                transform.Translate((NearestOBJ.transform.position - transform.position).normalized * Time.deltaTime * speed);
             }
         }
-        transform.Translate((NearestOBJ.transform.position - transform.position).normalized * Time.deltaTime * speed);
     }
-
-    
 }

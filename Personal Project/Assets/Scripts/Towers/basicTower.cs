@@ -10,11 +10,11 @@ public class basicTower : MonoBehaviour
     float distance;
     float nearestDistance = 10;
     private float startDelay = 1;
-
+    private bool cooldown;
 
     void Start()
     {
-        InvokeRepeating("spawnBulletPrefabs", startDelay, 2f);
+        
     }
 
     void Update()
@@ -29,6 +29,14 @@ public class basicTower : MonoBehaviour
             {
                 NearestOBJ = AllObjects[i];
                 nearestDistance = distance;
+                if (Vector3.Distance(this.transform.position, NearestOBJ.transform.position) <= 10)
+                {
+                    if (!cooldown)
+                    {
+                        Invoke("spawnBulletPrefabs", startDelay);
+                        cooldown = true;
+                    }
+                }
             }
         }
     }
