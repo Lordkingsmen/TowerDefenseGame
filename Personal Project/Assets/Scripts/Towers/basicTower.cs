@@ -9,7 +9,6 @@ public class basicTower : MonoBehaviour
     public GameObject NearestOBJ;
     float distance;
     float nearestDistance = 10;
-    private float startDelay = 1;
     private bool cooldown;
 
     void Start()
@@ -33,17 +32,19 @@ public class basicTower : MonoBehaviour
                 {
                     if (!cooldown)
                     {
-                        Invoke("spawnBulletPrefabs", startDelay);
+                        StartCoroutine("spawnBulletPrefabs");
                         cooldown = true;
                     }
                 }
             }
         }
     }
-    void spawnBulletPrefabs()
+    IEnumerator spawnBulletPrefabs()
     {
         int bulletIndex = Random.Range(0, bulletPrefabs.Length);
         Vector3 spawnPos = transform.position;
         Instantiate(bulletPrefabs[bulletIndex], spawnPos, bulletPrefabs[bulletIndex].transform.rotation);
+        yield return new WaitForSeconds(2f);
+        cooldown = false;
     }
 }
