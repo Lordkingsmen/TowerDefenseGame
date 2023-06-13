@@ -852,7 +852,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5884298119372034588, guid: a8336f717df663b41a5e67137e23d8a0, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 3
+      value: 1.25
       objectReference: {fileID: 0}
     - target: {fileID: 5884298119372034588, guid: a8336f717df663b41a5e67137e23d8a0, type: 3}
       propertyPath: m_LocalPosition.y
@@ -864,19 +864,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5884298119372034588, guid: a8336f717df663b41a5e67137e23d8a0, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5884298119372034588, guid: a8336f717df663b41a5e67137e23d8a0, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5884298119372034588, guid: a8336f717df663b41a5e67137e23d8a0, type: 3}
-      propertyPath: m_LocalRotation.y
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5884298119372034588, guid: a8336f717df663b41a5e67137e23d8a0, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5884298119372034588, guid: a8336f717df663b41a5e67137e23d8a0, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5884298119372034588, guid: a8336f717df663b41a5e67137e23d8a0, type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5884298119372034588, guid: a8336f717df663b41a5e67137e23d8a0, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -884,7 +884,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5884298119372034588, guid: a8336f717df663b41a5e67137e23d8a0, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: 180
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5884298119372034588, guid: a8336f717df663b41a5e67137e23d8a0, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
@@ -1978,7 +1978,9 @@ MonoBehaviour:
   cameraZoom: {fileID: 157705861}
   scrollSensSlider: {fileID: 751356036}
   moveSensSlider: {fileID: 1567388100}
+  startButton: {fileID: 0}
   pauseScreen: {fileID: 674813667}
+  homeScreen: {fileID: 0}
 --- !u!1 &1108248690
 GameObject:
   m_ObjectHideFlags: 0
@@ -3007,6 +3009,8 @@ MonoBehaviour:
   - {fileID: 8305302912455434164, guid: dbd4223fb3bb85040a11b041a778cbab, type: 3}
   AllObjects: []
   NearestOBJ: {fileID: 0}
+  distance: 0
+  nearestDistance: 10
 --- !u!1001 &6239989796846523501
 PrefabInstance:
   m_ObjectHideFlags: 0

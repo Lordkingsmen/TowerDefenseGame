@@ -17,7 +17,9 @@ public class GameManager : MonoBehaviour
     public Camera cameraZoom;
     public Slider scrollSensSlider;
     public Slider moveSensSlider;
+    public Button startButton;
     public GameObject pauseScreen;
+    public GameObject homeScreen;
     private bool paused;
 
     void Start()

@@ -7,8 +7,8 @@ public class basicTower : MonoBehaviour
     public GameObject[] bulletPrefabs;
     public GameObject[] AllObjects;
     public GameObject NearestOBJ;
-    float distance;
-    float nearestDistance = 10;
+    public float distance;
+    public float nearestDistance = 10;
     private bool cooldown;
 
     void Start()
@@ -23,17 +23,15 @@ public class basicTower : MonoBehaviour
         for (int i = 0; i < AllObjects.Length; i++)
         {
             distance = Vector3.Distance(this.transform.position, AllObjects[i].transform.position);
-
-            if (distance < nearestDistance)
+            if (distance <= nearestDistance)
             {
                 NearestOBJ = AllObjects[i];
-                nearestDistance = distance;
                 if (Vector3.Distance(this.transform.position, NearestOBJ.transform.position) <= 10)
                 {
                     if (!cooldown)
                     {
-                        StartCoroutine("spawnBulletPrefabs");
                         cooldown = true;
+                        StartCoroutine("spawnBulletPrefabs");
                     }
                 }
             }
@@ -44,7 +42,7 @@ public class basicTower : MonoBehaviour
         int bulletIndex = Random.Range(0, bulletPrefabs.Length);
         Vector3 spawnPos = transform.position;
         Instantiate(bulletPrefabs[bulletIndex], spawnPos, bulletPrefabs[bulletIndex].transform.rotation);
-        yield return new WaitForSeconds(2f);
+        yield return new WaitForSeconds(1f);
         cooldown = false;
     }
 }
